@@ -9,7 +9,7 @@ end
 function read_query_result(inj)
 	print(
 		"[" .. os.date() .. "] " .. 
-		string.gsub(inj.query, "n", "") .. 
+		string.gsub(inj.query, "\n", "") .. 
 		" [query-time=" .. (inj.query_time / 1000) .. "ms, " .. 
 		"response-time=" .. (inj.response_time / 1000) .. "ms]"
 	)
